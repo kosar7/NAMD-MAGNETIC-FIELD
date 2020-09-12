@@ -1,0 +1,35 @@
+* ---- 
+* Built parameters for Heptane.mol2 
+*    by user vzoete     Wed Dec  6 06:35:18 CET 2017 
+* ---- 
+*
+
+BONDS
+
+
+ANGLES
+!V(dihedral) = Kchi(1 + cos(n(chi) - delta))
+!
+!Kchi: kcal/mole
+!n: multiplicity
+!delta: degrees
+!
+!atom types             Kchi    n   delta
+!
+
+!
+!V(improper) = Kpsi(psi - psi0)**2
+!
+!Kpsi: kcal/mole/rad**2
+!psi0: degrees
+!note that the second column of numbers (0) is ignored
+!
+!atom types           Kpsi                   psi0
+!
+
+NONBONDED nbxmod  5 atom cdiel shift vatom vdistance vswitch -
+cutnb 14.0 ctofnb 12.0 ctonnb 10.0 eps 1.0 e14fac 1.0 wmin 1.5
+   
+NAP     0.000000   -0.0005     2.251455    
+
+End

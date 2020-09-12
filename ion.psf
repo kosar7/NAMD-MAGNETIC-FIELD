@@ -1,0 +1,35 @@
+PSF
+
+       3 !NTITLE
+ REMARKS original generated structure x-plor psf file
+ REMARKS topology ion-temp.top 
+ REMARKS segment O1 { first NONE; last NONE; auto angles dihedrals }
+
+       1 !NATOM
+       1 O1   1    SOD  SOD  NAP    -1.0       23           0
+
+       0 !NBOND: bonds
+
+
+       0 !NTHETA: angles
+
+
+       0 !NPHI: dihedrals
+
+
+       0 !NIMPHI: impropers
+
+
+       0 !NDON: donors
+
+
+       0 !NACC: acceptors
+
+
+       0 !NNB
+
+       0
+
+       1       0 !NGRP
+       0       0       0
+
