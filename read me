@@ -26,13 +26,13 @@ algorithm: NAMD source code version 2.12. J Mol Model 26, 106 (2020). https://do
 
 Implementation
 
-See instructions here.
+See instructions in Implementation file.
 
 Documentation
 
-Further documentation is available in the doc subdirectory.
+Further documentation is available in the uploaded files.
 
-For an extensive description of the tool, together with the comparison with experimental data, see the Density Profile paper
+For an extensive description of the tool, together with the comparison with experimental data, see the published paper.
 
 License
 
