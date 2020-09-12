@@ -1,5 +1,13 @@
 readme file provided by "Kosar Khajeh" in order to introduce magnetic field force into NAMD source code version 12.
 
+
+It should be mentioned that, only "ComputeMField.C" and "ComputeMfield.h" are new files in this category. As you know, both the electric field and magnetic field are electomagnetic wave 
+and fundamentally are the same. In this implementation we have tried ro follw the method which has used to apply electric field inside the source code.
+ These files contain the neccessary relation for description of magnetic field based on the Lorentz force and these files have been connected to the other files in the source code.
+ for more information about other files please see the NAMD.pdf and below link;
+ http://www.ks.uiuc.edu/Research/namd/development.html
+
+
 Author
 
 Kosar Khajeh, 
