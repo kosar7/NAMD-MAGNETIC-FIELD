@@ -1,0 +1,63 @@
+readme file provided by "Kosar Khajeh" in order to introduce magnetic field force into NAMD source code version 12.
+
+Author
+
+Kosar Khajeh, 
+Habib Aminfar, 
+Yoshihiro Masuda, 
+Mousa Mohammadpourfard 
+
+khajeh.k.2005 at gmail.com
+
+Citation
+
+Please cite this paper when publishing results obtained with the Density Profile Tool:
+
+Khajeh, K., Aminfar, H., Masuda, Y. et al. Implementation of magnetic field force in molecular dynamics
+algorithm: NAMD source code version 2.12. J Mol Model 26, 106 (2020). https://doi.org/10.1007/s00894-020-4349-0
+
+Installation
+
+See instructions here.
+
+
+Please follow below items;
+
+1-Download NAMD source code version 12 (Version 2.12 (2016-12-22) Platforms) from below link;
+https://www.ks.uiuc.edu/Development/Download/download.cgi?PackageName=NAMD
+
+2-Follow comments in "Compiling NAMD" part, in the "notes.txt" in order to compile NAMD.
+To be sure your compiling has done correctly, you can use below files to test your running; 
+"ion.conf, ion.pdb, ion.psf, ion.par"
+compile NAMD by using below comment;
+"./namd2 ion.conf | tee ion1.log"
+
+now, you are ready to apply magnetic field to your simulation.
+
+3-In this step you should copy and replecs several files in the main folder;
+copy below files in "NAMD_2.12_Source/src";
+"SimParameters.h, SimParameters.C, ComputeMField.h, ComputeMField.C, WorkDistrib.h, WorkDistrib.C, ComputeMap.h, ComputeMap.C, ComputeMgr.h, ComputeMgr.C"
+copy below files in "NAMD_2.12_Source";
+"Make.charm, Make.depends, Makefile"
+
+It should be mentioned that, only "ComputeMField.C" and "ComputeMfield.h" are new files in this category. As you know, both the electric field and magnetic field are electomagnetic wave 
+and fundamentally are the same. In this implementation we have tried ro follw the method which has used to apply electric field inside the source code.
+ These files contain the neccessary relation for description of magnetic field based on the Lorentz force and these files have been connected to the other files in the source code.
+ for more information about other files please see the NAMD.pdf and below link;
+ http://www.ks.uiuc.edu/Research/namd/development.html
+We edited other mentioned files to connect these files together.
+
+4-cd Linux-x86_64-g++
+  make
+ (before "make", please open the "ComputeMField.C" file and change the provider name to yours, then save the file and comment "make")
+ 
+5-finished 
+ you can add below comment to "configuration file" to active magnetic field
+ ### magnetic field
+mFieldOn                        on
+mField                          0.0 0.0 -0.069e-6
+
+
+pleas remind that;
+1[T]=0.023e-5[internal unit NAMD]
+
