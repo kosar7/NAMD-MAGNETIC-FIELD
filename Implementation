@@ -13,7 +13,7 @@ now, you are ready to implement the source code.
 
 3-In this step you should copy and replecs several files in the main source (src) folder;
 copy below files in "NAMD_2.12_Source/src";
-"SimParameters.h, SimParameters.c, ComputeMField.h, ComputeMField.c,NamdTypes.c, NamdTypes.h, hompatch.c, WorkDistrib.h, WorkDistrib.c, ComputeMap.h, ComputeMap.c, ComputeMgr.h, ComputeMgr.c"
+"SimParameters.h, SimParameters.c, ComputeMField.h, ComputeMField.c NamdTypes.h, homepatch.c, WorkDistrib.h, WorkDistrib.c, ComputeMap.h, ComputeMap.c,ComputeMao.h, ComputeMgr.h, ComputeMgr.c"
  and then copy below files in "NAMD_2.12_Source";
 "Make.charm, Make.depends, Makefile"
 
