@@ -74,8 +74,8 @@ void ComputeMField::doForce(FullAtom* p, Results* r) {
 		p[i].position, p[i].transform );
     energy -= force * (vpos - homePatch->lattice.origin()); //TODO: Kosar, energy preservation should hold
 
-    printf(", velocity: [%f, %f, %f]\n\n",  p[i].velocity.x,  p[i].velocity.y,  p[i].velocity.z);
-    printf(", VELOCITY: [%f, %f, %f]\n\n",  PDBVELFACTOR * p[i].velocity.x, PDBVELFACTOR * p[i].velocity.y,  PDBVELFACTOR * p[i].velocity.z);
+   // printf(", velocity: [%f, %f, %f]\n\n",  p[i].velocity.x,  p[i].velocity.y,  p[i].velocity.z);
+   // printf(", VELOCITY: [%f, %f, %f]\n\n",  PDBVELFACTOR * p[i].velocity.x, PDBVELFACTOR * p[i].velocity.y,  PDBVELFACTOR * p[i].velocity.z);
 
 
     
